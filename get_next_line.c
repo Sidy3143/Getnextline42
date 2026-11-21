@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/20 16:39:17 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/21 18:33:31 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/21 18:37:16 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,10 @@ char    *read_and_store(int fd, char *storage)
 
 char    *ft_strjoin(char *storage, char *buffer)
 {
-    
+    char    *res;
+
+    res = malloc(ft_strlen(storage) + ft_strlen(buffer) + 1);
+    //to be continued ...
 }
 
 char    *extract_line(char **storage)
@@ -67,6 +70,6 @@ char    *extract_line(char **storage)
         line[i] = (*storage)[i];
         i++;
     }
-    *storage = (*storage) + i;
+    *storage = (*storage) + i + 1;
     return (line);
 }
