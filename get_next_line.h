@@ -6,7 +6,7 @@
 /*   By: sindiaye <sindiaye@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/20 16:40:43 by sindiaye          #+#    #+#             */
-/*   Updated: 2026/11/20 16:48:07 by sindiaye         ###   ########.fr       */
+/*   Updated: 2026/11/21 17:59:38 by sindiaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <stddef.h>
+
+#define BUFFER_SIZE 42
 
 char *get_next_line(int fd);
 
